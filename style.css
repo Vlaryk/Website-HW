@@ -4,17 +4,27 @@
 }
 
 @font-face {
-    font-family: 'gilroy-bold';
-    src: url(/fonts/gilroybolt/fonts/gilroy-bold.eot);
+  font-family: "gilroy-bold";
+  src: url(/fonts/gilroy-bold.ttf);
 }
-body{
-  font-family: 'gilroy-bold', sans-serif ;
-  
+
+@font-face {
+  font-family: "gilroy-medium";
+  src: url(/fonts/gilroy-medium.ttf);
 }
+
+@font-face {
+  font-family: 'gilroy-semi-bold';
+  src: url(/fonts/gilroy-semi-bold.ttf);
+}
+
+body {
+  font-family: 'gilroy-bold', sans-serif;
+}
+
 .header {
   display: flex;
-  margin-right: 1510px;
-  margin-bottom: 84px;
+  padding-bottom: 83px;
   margin-left: 375px;
   font-size: 14px;
   font-style: normal;
@@ -23,17 +33,23 @@ body{
 }
 
 .img__header {
-  margin-top: 40px;
+  padding-top: 40px;
 }
-.menu { 
+.menu {
+  font-family: 'gilroy-medium', sans-serif;
   display: flex;
   gap: 12px;
-  margin-top: 51px;
+  padding-right: 375px;
+  padding-top: 51px;
   padding-left: 500px;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.current__link {
+  font-family: 'gilroy-semi-bold', sans-serif;
 }
 a {
   text-decoration: none;
@@ -41,7 +57,7 @@ a {
 }
 
 .grow__be {
-  margin-top: 45px;
+  padding-top: 45px;
   padding-left: 14px;
   color: #000;
   font-size: 24px;
@@ -63,7 +79,8 @@ a:visited {
 
 .main {
   display: flex;
-  padding-left: 373px;
+  gap: 41px;
+  margin-left: 373px;
 }
 
 .big_text_main {
@@ -74,6 +91,7 @@ a:visited {
 }
 
 .little_text_main {
+  font-family: 'gilroy-medium', sans-serif;
   padding-top: 17px;
   padding-bottom: 37px;
   color: #888;
@@ -83,43 +101,43 @@ a:visited {
   line-height: normal;
 }
 
-.main__photo{
-  padding-left: 41px;
+.main__photo {
 }
 .button {
   display: flex;
-  gap:72px;
+  padding-left: 2px;
+  gap: 72px;
 }
 .start__now {
   border-radius: 50px;
-  background: #F25822;
+  background: #f25822;
   width: 140px;
   height: 50px;
   flex-shrink: 0;
-  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
-  color: #FFF;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+  color: #fff;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  border:none;
+  border: none;
 }
 
 .watch__video {
-  color: #AAA;
+  color: #aaa;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   background-color: white;
-  border:none;
+  border: none;
 }
 
 .bottom {
   display: flex;
   gap: 48px;
-  padding-top: 162px ;
-  padding-left: 345px;
+  padding-top: 162px;
+  margin-left: 345px;
   padding-bottom: 96px;
   padding-right: 375px;
 }
